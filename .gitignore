@@ -25,3 +25,5 @@ frontend/dist/
 # Portable zips (the bundled open dataset in sources/ IS committed)
 careharbor-portable-*.zip
 dist/
+
+docs/
