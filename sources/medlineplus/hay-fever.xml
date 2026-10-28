@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nlmSearchResult>
+  <term>title:"Hay Fever"</term>
+  <file>viv_cI0sBa</file>
+  <server>pvlb7srch16</server>
+  <count>1</count>
+  <retstart>0</retstart>
+  <retmax>10</retmax>
+  <list num="1" start="0" per="10">
+    <document rank="0" url="https://medlineplus.gov/hayfever.html">
+      <content name="title">&lt;span class="qt0"&gt;Hay Fever&lt;/span&gt;</content>
+      <content name="organizationName">National Library of Medicine</content>
+      <content name="altTitle">Allergic Rhinitis</content>
+      <content name="altTitle">Pollen Allergy</content>
+      <content name="altTitle">Seasonal Allergies</content>
+      <content name="FullSummary">&lt;p&gt;Each spring, summer, and fall, trees, weeds, and grasses release tiny pollen grains into the air. Some of the pollen ends up in your nose and throat. This can trigger a type of allergy called &lt;span class="qt0"&gt;hay fever&lt;/span&gt;.&lt;/p&gt;&lt;p&gt;Symptoms can include:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Sneezing, often with a runny or clogged nose&lt;/li&gt;&lt;li&gt;Coughing and postnasal drip&lt;/li&gt;&lt;li&gt;Itching eyes, nose and throat&lt;/li&gt;&lt;li&gt;Red and watery eyes&lt;/li&gt;&lt;li&gt;Dark circles under the eyes&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Your health care provider may diagnose &lt;span class="qt0"&gt;hay fever&lt;/span&gt; based on a physical exam and your symptoms. Sometimes skin or blood tests are used. Taking medicines and using nasal sprays can relieve symptoms. You can also rinse out your nose, but be sure to use distilled or sterilized water with saline. Allergy shots can help make you less sensitive to pollen and provide long-term relief.&lt;/p&gt;</content>
+      <content name="mesh">Rhinitis, Allergic, Seasonal</content>
+      <content name="groupName">Ear, Nose and Throat</content>
+      <content name="groupName">Immune System</content>
+      <content name="snippet"> Each spring, summer, and fall, trees, weeds, and grasses release tiny pollen grains into the air. Some of the pollen ends up in your nose and throat. This  ... </content>
+    </document>
+  </list>
+</nlmSearchResult>

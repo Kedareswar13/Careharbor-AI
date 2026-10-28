@@ -1,0 +1,16 @@
+# Caddy reverse proxy with automatic HTTPS (Let's Encrypt).
+# CAREHARBOR_DOMAIN comes from .env, e.g. careharbor.example.com or <public-ip-with-dashes>.sslip.io
+{$CAREHARBOR_DOMAIN} {
+	encode gzip
+	header {
+		Strict-Transport-Security "max-age=31536000"
+		X-Content-Type-Options "nosniff"
+		X-Frame-Options "DENY"
+		Referrer-Policy "strict-origin-when-cross-origin"
+		Permissions-Policy "camera=(), geolocation=(), microphone=(self)"
+	}
+	# Server-Sent Events (streamed pipeline stages) must not be buffered.
+	reverse_proxy careharbor:7860 {
+		flush_interval -1
+	}
+}

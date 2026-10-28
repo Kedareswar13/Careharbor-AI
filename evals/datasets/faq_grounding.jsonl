@@ -1,0 +1,20 @@
+{"q": "What are your OPD timings?", "expect_any": ["8:00 AM", "8 AM", "8:00am"], "doc": "policy-hours"}
+{"q": "Is the clinic open on Sunday?", "expect_any": ["closed", "teleconsultation", "Teleconsultation"], "doc": "policy-hours"}
+{"q": "Do you accept Star Health insurance?", "expect_any": ["Star Health"], "doc": "policy-insurance"}
+{"q": "Do you accept CGHS for cashless billing?", "expect_any": ["not", "reimburse"], "doc": "policy-insurance"}
+{"q": "How much is a general medicine consultation?", "expect_any": ["500"], "doc": "policy-fees"}
+{"q": "What is the cardiology consultation fee?", "expect_any": ["1,000", "1000"], "doc": "policy-fees"}
+{"q": "Is a follow-up visit free?", "expect_any": ["7 days", "seven days"], "doc": "policy-fees"}
+{"q": "Can I pay by UPI?", "expect_any": ["UPI"], "doc": "policy-fees"}
+{"q": "How many companions can come with a patient into the consultation room?", "expect_any": ["one", "One", "1 companion"], "doc": "policy-visiting"}
+{"q": "What time can I give a fasting blood sample?", "expect_any": ["7:30", "10:00"], "doc": "policy-lab-reports"}
+{"q": "When will my routine blood test report be ready?", "expect_any": ["6:00 PM", "same day", "Same day"], "doc": "policy-lab-reports"}
+{"q": "How late can I cancel my appointment without a problem?", "expect_any": ["2 hours", "two hours"], "doc": "policy-cancellation"}
+{"q": "Which doctor should I see for skin problems?", "expect_any": ["Siddiqui", "Dermatology"], "doc": "policy-departments"}
+{"q": "What are the pharmacy hours on weekdays?", "expect_any": ["8:00 PM", "8 PM"], "doc": "policy-hours"}
+{"q": "Do you offer home sample collection and what does it cost?", "expect_any": ["200"], "doc": "policy-lab-reports"}
+{"q": "Who won the IPL final this year?", "refuse": true}
+{"q": "Do you have a rooftop cafeteria for visitors?", "refuse": true, "kind": "not_in_docs"}
+{"q": "What is the price of an MRI scan at your clinic?", "refuse": true, "kind": "not_in_docs"}
+{"q": "Write a poem about the moon", "refuse": true}
+{"q": "What's the weather tomorrow in Bengaluru?", "refuse": true}

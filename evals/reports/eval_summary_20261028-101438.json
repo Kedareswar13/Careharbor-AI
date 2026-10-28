@@ -1,0 +1,154 @@
+{
+  "generated": "20261028-101438",
+  "model": "MockLLM",
+  "passed": true,
+  "suites": [
+    {
+      "name": "Retrieval quality",
+      "score": 1.0,
+      "target": 0.9,
+      "score_display": "100%",
+      "target_display": ">= 90%",
+      "passed": true,
+      "n": 40,
+      "extra": {
+        "ablation": {
+          "BM25 (no expansion)": {
+            "hit@1": 0.775,
+            "hit@3": 0.9,
+            "mrr": 0.838
+          },
+          "BM25 + synonym/Hinglish expansion": {
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "mrr": 1.0
+          },
+          "+ multi-query RRF + re-rank + CRAG": {
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "mrr": 1.0
+          },
+          "+ conversational rewrite (full)": {
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "mrr": 1.0
+          }
+        },
+        "seconds": 0.1
+      }
+    },
+    {
+      "name": "Emergency red flags",
+      "score": 1.0,
+      "target": 1.0,
+      "score_display": "100%",
+      "target_display": ">= 100%",
+      "passed": true,
+      "n": 30,
+      "extra": {
+        "seconds": 1.0
+      }
+    },
+    {
+      "name": "No diagnosis / no dosing",
+      "score": 0.0,
+      "target": 0,
+      "score_display": "0",
+      "target_display": "= 0",
+      "passed": true,
+      "n": 25,
+      "extra": {
+        "seconds": 0.6
+      }
+    },
+    {
+      "name": "Booking correctness",
+      "score": 1.0,
+      "target": 1.0,
+      "score_display": "100%",
+      "target_display": ">= 100%",
+      "passed": true,
+      "n": 20,
+      "extra": {
+        "seconds": 2.9
+      }
+    },
+    {
+      "name": "Prescription fidelity",
+      "score": 1.0,
+      "target": 1.0,
+      "score_display": "100%",
+      "target_display": ">= 100%",
+      "passed": true,
+      "n": 20,
+      "extra": {
+        "seconds": 1.8
+      }
+    },
+    {
+      "name": "Identity gate",
+      "score": 0.0,
+      "target": 0,
+      "score_display": "0",
+      "target_display": "= 0",
+      "passed": true,
+      "n": 10,
+      "extra": {
+        "seconds": 0.2
+      }
+    },
+    {
+      "name": "Prompt injection",
+      "score": 0.0,
+      "target": 0,
+      "score_display": "0",
+      "target_display": "= 0",
+      "passed": true,
+      "n": 15,
+      "extra": {
+        "seconds": 0.3
+      }
+    },
+    {
+      "name": "Triage disposition",
+      "score": 1.0,
+      "target": 0.9,
+      "score_display": "100%",
+      "target_display": ">= 90%",
+      "passed": true,
+      "n": 30,
+      "extra": {
+        "unsafe_disagreements": 0,
+        "seconds": 0.2
+      }
+    },
+    {
+      "name": "FAQ grounding",
+      "score": 1.0,
+      "target": 0.9,
+      "score_display": "100%",
+      "target_display": ">= 90%",
+      "passed": true,
+      "n": 18,
+      "extra": {
+        "answer_correctness": 1.0,
+        "context_precision": 1.0,
+        "faithfulness": 1.0,
+        "skipped_live_only": 2,
+        "seconds": 0.6
+      }
+    },
+    {
+      "name": "Security (4 layers)",
+      "score": 0.0,
+      "target": 0,
+      "score_display": "0",
+      "target_display": "= 0",
+      "passed": true,
+      "n": 51,
+      "extra": {
+        "seconds": 0.8
+      }
+    }
+  ]
+}

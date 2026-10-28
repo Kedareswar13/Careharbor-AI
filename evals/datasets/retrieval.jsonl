@@ -1,0 +1,40 @@
+{"q": "I've had a headache since morning", "coll": "care", "doc": "leaflet-headache"}
+{"q": "bukhar hai 2 din se", "coll": "care", "doc": "leaflet-fever"}
+{"q": "loose motions since yesterday", "coll": "care", "doc": "leaflet-diarrhoea"}
+{"q": "twisted my ankle playing football", "coll": "care", "doc": "leaflet-sprains"}
+{"q": "itchy rash on my arms", "coll": "care", "doc": "leaflet-skin-rash"}
+{"q": "I cannot sleep at night", "coll": "care", "doc": "leaflet-sleep-hygiene"}
+{"q": "how to check BP at home", "coll": "care", "doc": "leaflet-bp-readings"}
+{"q": "burnt my hand on the stove", "coll": "care", "doc": "leaflet-cuts-burns"}
+{"q": "sir dard ho raha hai", "coll": "care", "doc": "leaflet-headache"}
+{"q": "acidity after dinner", "coll": "care", "doc": "leaflet-acid-reflux"}
+{"q": "sneezing and itchy eyes every spring", "coll": "care", "doc": "leaflet-seasonal-allergy"}
+{"q": "my lower back hurts after lifting", "coll": "care", "doc": "leaflet-back-pain"}
+{"q": "throat is scratchy and painful to swallow", "coll": "care", "doc": "leaflet-sore-throat"}
+{"q": "blocked nose and cough for two days", "coll": "care", "doc": "leaflet-cold-cough"}
+{"q": "khansi aur zukam", "coll": "care", "doc": "leaflet-cold-cough"}
+{"q": "heartburn when I lie down", "coll": "care", "doc": "leaflet-acid-reflux"}
+{"q": "my temperature is 101", "coll": "care", "doc": "leaflet-fever"}
+{"q": "diabetic with a small wound on my toe", "coll": "care", "doc": "leaflet-diabetes-foot"}
+{"q": "I scalded my finger with hot tea", "coll": "care", "doc": "leaflet-cuts-burns"}
+{"q": "pet kharab hai, dast ho rahe hain", "coll": "care", "doc": "leaflet-diarrhoea"}
+{"q": "What are your OPD timings?", "coll": "faq", "doc": "policy-hours"}
+{"q": "is the clinic open on sunday", "coll": "faq", "doc": "policy-hours"}
+{"q": "Do you accept Star Health insurance?", "coll": "faq", "doc": "policy-insurance"}
+{"q": "cashless treatment kaise milega", "coll": "faq", "doc": "policy-insurance"}
+{"q": "how much is the consultation fee", "coll": "faq", "doc": "policy-fees"}
+{"q": "can I pay by UPI", "coll": "faq", "doc": "policy-fees"}
+{"q": "can I bring my mother with me", "coll": "faq", "doc": "policy-visiting"}
+{"q": "is there parking for two wheelers", "coll": "faq", "doc": "policy-visiting"}
+{"q": "how do I cancel my appointment", "coll": "faq", "doc": "policy-cancellation"}
+{"q": "what happens if I miss my appointment", "coll": "faq", "doc": "policy-cancellation"}
+{"q": "when will my blood test report be ready", "coll": "faq", "doc": "policy-lab-reports"}
+{"q": "do I need to fast before a sugar test", "coll": "faq", "doc": "policy-lab-reports"}
+{"q": "which doctor should I see for skin problems", "coll": "faq", "doc": "policy-departments"}
+{"q": "does the cardiologist work on Monday", "coll": "faq", "doc": "policy-departments"}
+{"q": "do you share my data with anyone", "coll": "faq", "doc": "policy-privacy"}
+{"q": "is this assistant a real doctor", "coll": "faq", "doc": "policy-privacy"}
+{"q": "and on Sunday?", "previous": "What are your OPD timings?", "coll": "faq", "doc": "policy-hours"}
+{"q": "what about CGHS?", "previous": "Do you accept Star Health insurance?", "coll": "faq", "doc": "policy-insurance"}
+{"q": "and for physiotherapy?", "previous": "How much is a cardiology consultation?", "coll": "faq", "doc": "policy-fees"}
+{"q": "what about X-ray?", "previous": "When will my blood test report be ready?", "coll": "faq", "doc": "policy-lab-reports"}

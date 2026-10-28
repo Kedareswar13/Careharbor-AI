@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nlmSearchResult>
+  <term>title:"Sore Throat"</term>
+  <file>viv_bRbppU</file>
+  <server>pvlb7srch15</server>
+  <count>1</count>
+  <retstart>0</retstart>
+  <retmax>10</retmax>
+  <list num="1" start="0" per="10">
+    <document rank="0" url="https://medlineplus.gov/sorethroat.html">
+      <content name="title">&lt;span class="qt0"&gt;Sore Throat&lt;/span&gt;</content>
+      <content name="organizationName">National Library of Medicine</content>
+      <content name="altTitle">&lt;span class="qt1"&gt;Pharyngitis&lt;/span&gt;</content>
+      <content name="FullSummary">&lt;p&gt;Your throat is a tube that carries food to your esophagus and air to your windpipe and larynx (also called the voice box). The technical name for the throat is pharynx.&lt;/p&gt;&lt;p&gt;You can have a &lt;span class="qt0"&gt;sore throat&lt;/span&gt; for many reasons.  Often, colds and flu cause &lt;span class="qt0"&gt;sore throats&lt;/span&gt;.  Other causes can include:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Allergies&lt;/li&gt;&lt;li&gt;Mononucleosis&lt;/li&gt;&lt;li&gt;Smoking&lt;/li&gt;&lt;li&gt;Strep throat&lt;/li&gt;&lt;li&gt;Tonsillitis&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Treatment depends on the cause.  Sucking on lozenges, drinking lots of liquids, and gargling may ease the pain.  Over-the-counter pain relievers can also help, but children should not take aspirin.&lt;/p&gt;</content>
+      <content name="mesh">&lt;span class="qt1"&gt;Pharyngitis&lt;/span&gt;</content>
+      <content name="groupName">Ear, Nose and Throat</content>
+      <content name="snippet"> Your throat is a tube that carries food to your esophagus and air to your windpipe and larynx (also called the voice box). The technical name for the throat  ... </content>
+    </document>
+  </list>
+</nlmSearchResult>

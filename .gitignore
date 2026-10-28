@@ -1,0 +1,27 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Secrets - only .env.example is committed
+.env
+.env.*
+!.env.example
+
+# Generated data and caches
+data/*.db
+data/*.db-*
+data/index/
+data/traces/
+data/cache/
+logs/
+.run/
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+
+# Portable zips (the bundled open dataset in sources/ IS committed)
+careharbor-portable-*.zip
+dist/

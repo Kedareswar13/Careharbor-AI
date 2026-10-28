@@ -1,0 +1,30 @@
+{"story": "I have a mild headache since morning", "answer": "No, none of those.", "label": "self_care"}
+{"story": "runny nose and sneezing since yesterday", "answer": "No, none of these.", "label": "self_care"}
+{"story": "acidity after a spicy dinner tonight", "answer": "No.", "label": "self_care"}
+{"story": "small cut on my finger while chopping vegetables", "answer": "No, it is fine now.", "label": "self_care"}
+{"story": "I twisted my ankle slightly while walking, I can still walk", "answer": "No.", "label": "self_care"}
+{"story": "itchy rash on my arm since today after using a new soap", "answer": "No, none of these.", "label": "self_care"}
+{"story": "I have loose motions since this morning, drinking ORS", "answer": "No.", "label": "self_care"}
+{"story": "mild sore throat since yesterday", "answer": "No, none.", "label": "self_care"}
+{"story": "lower back pain after lifting a box yesterday", "answer": "No.", "label": "self_care"}
+{"story": "I couldn't sleep well last night because of stress", "answer": "No, none of these.", "label": "self_care"}
+{"story": "I get headaches that keep coming back every week", "answer": "No, none of those.", "label": "book"}
+{"story": "I have had a cough for three weeks", "answer": "No.", "label": "book"}
+{"story": "rash on my leg for 10 days, not improving", "answer": "No.", "label": "book"}
+{"story": "acidity and heartburn for 3 weeks", "answer": "No.", "label": "book"}
+{"story": "back pain for a month", "answer": "No.", "label": "book"}
+{"story": "I have had fever for 4 days", "answer": "No, it is mild, no stiff neck or rash.", "label": "book"}
+{"story": "sore throat for 10 days", "answer": "No.", "label": "book"}
+{"story": "sneezing and runny nose for 2 months", "answer": "No.", "label": "book"}
+{"story": "trouble sleeping for a month", "answer": "No, none of these.", "label": "book"}
+{"story": "diarrhoea for 3 days", "answer": "No, none.", "label": "book"}
+{"story": "fever of 103 F since yesterday", "answer": "No, none of those.", "label": "urgent"}
+{"story": "my 4 year old son has fever and vomiting", "answer": "No.", "label": "urgent"}
+{"story": "the cut on my hand is red, hot and swollen with pus", "answer": "No.", "label": "urgent"}
+{"story": "I am pregnant and have a headache", "answer": "No, none of those.", "label": "urgent"}
+{"story": "twisted my ankle and I can't walk on it", "answer": "No.", "label": "urgent"}
+{"story": "I am diabetic and have a blister on my foot that is not healing", "answer": "No.", "label": "urgent"}
+{"story": "vomiting since morning and I can't keep water down", "answer": "No.", "label": "urgent"}
+{"story": "severe pain in my ear with discharge", "answer": "No.", "label": "urgent"}
+{"story": "headache since afternoon", "answer": "yes", "label": "emergency"}
+{"story": "fever since yesterday", "answer": "yes, I have a stiff neck", "label": "emergency"}

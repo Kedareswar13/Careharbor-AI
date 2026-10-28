@@ -1,0 +1,15 @@
+.venv
+**/node_modules
+frontend/dist
+.env
+data/*.db*
+data/traces
+data/index
+logs
+.run
+.git
+**/__pycache__
+.pytest_cache
+careharbor-portable-*.zip
+*.log
+evals/reports/timing_raw.json

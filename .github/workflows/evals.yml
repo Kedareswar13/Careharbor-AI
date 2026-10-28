@@ -1,0 +1,79 @@
+name: evals
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test-and-evals:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      PYTHONUTF8: "1"
+      LLM_PROVIDER: mock          # CI has no local model: the deterministic MockLLM drives the graph
+      STAFF_PASSWORD: ci-only-password
+      SESSION_SECRET: ci-only-secret
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v3
+
+      - name: Install dependencies
+        run: |
+          uv venv --python 3.11
+          uv sync
+
+      - name: Seed synthetic clinic data
+        run: uv run python scripts/seed.py
+
+      - name: Unit, red-team and API tests
+        run: uv run pytest -q
+
+      - name: Eval suites + golden regression (CI gate)
+        run: uv run python scripts/run_evals.py --mock --golden
+
+      - name: Build the UI
+        working-directory: frontend
+        run: |
+          npm ci || npm install
+          npm run build
+
+      - name: Upload eval report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: eval-report
+          path: evals/reports/
+
+  docker-image:
+    # Proves the deployment image builds and starts (the build laptop has no Docker engine).
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build image
+        run: docker build -t careharbor:ci .
+
+      - name: Start container (MockLLM, no model needed)
+        run: |
+          docker run -d --name careharbor -p 7860:7860 -e LLM_PROVIDER=mock -e SESSION_SECRET=ci-only-secret -e STAFF_PASSWORD=ci-only-password careharbor:ci
+          for i in $(seq 1 40); do curl -fsS http://127.0.0.1:7860/api/health && exit 0; sleep 3; done
+          docker logs careharbor; exit 1
+
+      - name: Smoke test chat, saved history and the UI
+        run: |
+          set -e
+          SID=$(curl -fsS -X POST http://127.0.0.1:7860/api/chat -H 'Content-Type: application/json' -d '{"message":"What are your OPD timings?"}' | python3 -c "import sys,json; print(json.load(sys.stdin)['session_id'])")
+          curl -fsS "http://127.0.0.1:7860/api/chat/history?session_id=$SID" | python3 -c "import sys,json; d=json.load(sys.stdin); assert len(d['messages'])==2, d"
+          docker restart careharbor
+          for i in $(seq 1 40); do curl -fsS http://127.0.0.1:7860/api/health >/dev/null && break; sleep 3; done
+          curl -fsS "http://127.0.0.1:7860/api/chat/history?session_id=$SID" | python3 -c "import sys,json; d=json.load(sys.stdin); assert len(d['messages'])==2, 'history lost after restart'"
+          curl -fsS http://127.0.0.1:7860/ | grep -q '<div id="root">'
+          echo "image OK: chat + history survives restart + UI served"
+
+      - name: Container logs
+        if: always()
+        run: docker logs careharbor || true

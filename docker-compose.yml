@@ -1,0 +1,59 @@
+# CareHarbor AI production stack for one small Linux VM (e.g. Oracle Cloud Always Free, 4 OCPU / 24 GB ARM).
+#   cp .env.example .env   # then set SESSION_SECRET, STAFF_PASSWORD, CAREHARBOR_DOMAIN (see docs/DEPLOYMENT.md)
+#   docker compose up -d --build
+#   docker compose exec ollama ollama pull qwen2.5:3b
+#   docker compose exec ollama ollama pull qwen2.5:1.5b
+# Only Caddy is exposed to the internet (80/443, automatic HTTPS). The API and Ollama stay on the private network.
+
+services:
+  ollama:
+    image: ollama/ollama:latest
+    restart: unless-stopped
+    environment:
+      OLLAMA_KEEP_ALIVE: 60m
+    volumes:
+      - ollama-models:/root/.ollama
+
+  careharbor:
+    build: .
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      APP_ENV: prod
+      API_HOST: 0.0.0.0
+      API_PORT: "7860"
+      # Inside the compose network Ollama is reachable by its service name. Override in .env to use Groq etc.
+      LLM_BASE_URL: ${LLM_BASE_URL_DOCKER:-http://ollama:11434/v1}
+      DB_PATH: /data/careharbor.db
+      CHECKPOINT_DB_PATH: /data/checkpoints.db
+      TRACE_DIR: /data/traces
+      # Only Caddy can reach this port on the compose network, and Caddy replaces client-supplied X-Forwarded-For,
+      # so the real client IP (rate limits) and https scheme (Secure cookie) can be trusted here.
+      FORWARDED_ALLOW_IPS: "*"
+    volumes:
+      - careharbor-data:/data
+    depends_on:
+      - ollama
+    ports:
+      - "127.0.0.1:7860:7860"   # for local checks on the VM only (curl http://127.0.0.1:7860/api/health)
+
+  caddy:
+    image: caddy:2
+    restart: unless-stopped
+    environment:
+      CAREHARBOR_DOMAIN: ${CAREHARBOR_DOMAIN:-localhost}
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./deploy/Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy-data:/data
+      - caddy-config:/config
+    depends_on:
+      - careharbor
+
+volumes:
+  ollama-models:
+  careharbor-data:
+  caddy-data:
+  caddy-config:

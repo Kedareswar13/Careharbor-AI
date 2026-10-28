@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nlmSearchResult>
+  <term>title:"Burns"</term>
+  <file>viv_igfYHU</file>
+  <server>pvlb7srch16</server>
+  <count>1</count>
+  <retstart>0</retstart>
+  <retmax>10</retmax>
+  <list num="1" start="0" per="10">
+    <document rank="0" url="https://medlineplus.gov/burns.html">
+      <content name="title">&lt;span class="qt0"&gt;Burns&lt;/span&gt;</content>
+      <content name="organizationName">National Library of Medicine</content>
+      <content name="FullSummary">&lt;p&gt;A &lt;span class="qt0"&gt;burn&lt;/span&gt; is damage to your body's tissues caused by heat, chemicals, electricity, sunlight, or radiation. &lt;span class="qt0"&gt;Scalds&lt;/span&gt; from hot liquids and steam, building fires and flammable liquids and gases are the most common causes of &lt;span class="qt0"&gt;burns&lt;/span&gt;. Another kind is an inhalation injury, caused by breathing smoke.&lt;/p&gt;&lt;p&gt;There are three types of &lt;span class="qt0"&gt;burns&lt;/span&gt;:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;First-degree &lt;span class="qt0"&gt;burns&lt;/span&gt; damage only the outer layer of skin &lt;/li&gt;&lt;li&gt;Second-degree &lt;span class="qt0"&gt;burns&lt;/span&gt; damage the outer layer and the layer underneath&lt;/li&gt;&lt;li&gt;Third-degree &lt;span class="qt0"&gt;burns&lt;/span&gt; damage or destroy the deepest layer of skin and tissues underneath&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;span class="qt0"&gt;Burns&lt;/span&gt; can cause swelling, blistering, scarring and, in serious cases, shock, and even death. They also can lead to infections because they damage your skin's protective barrier. Treatment for &lt;span class="qt0"&gt;burns&lt;/span&gt; depends on the cause of the &lt;span class="qt0"&gt;burn&lt;/span&gt;, how deep it is, and how much of the body it covers. Antibiotic creams can prevent or treat infections.  For more serious &lt;span class="qt0"&gt;burns&lt;/span&gt;, treatment may be needed to clean the wound, replace the skin, and make sure the patient has enough fluids and nutrition.&lt;/p&gt;&lt;p&gt;NIH: National Institute of General Medical Sciences&lt;/p&gt;</content>
+      <content name="mesh">&lt;span class="qt0"&gt;Burns&lt;/span&gt;</content>
+      <content name="groupName">Skin, Hair and Nails</content>
+      <content name="groupName">Injuries and Wounds</content>
+      <content name="snippet"> A &lt;span class="qt0"&gt;burn&lt;/span&gt; is damage to your body's tissues caused by heat, chemicals, electricity, sunlight, or radiation. &lt;span class="qt0"&gt;Scalds&lt;/span&gt; from hot liquids and steam, building fires  ... </content>
+    </document>
+  </list>
+</nlmSearchResult>
